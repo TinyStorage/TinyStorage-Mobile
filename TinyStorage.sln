@@ -1,0 +1,32 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyStorage", "TinyStorage\TinyStorage.csproj", "{055BE9A6-B772-42C0-BDC2-E129FE55AE65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyStorage.Droid", "TinyStorage.Droid\TinyStorage.Droid.csproj", "{E3943857-284E-43CD-878C-A834AF398C47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyStorage.iOS", "TinyStorage.iOS\TinyStorage.iOS.csproj", "{2E7DB1BE-7436-434D-89BC-5510D75181D2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{055BE9A6-B772-42C0-BDC2-E129FE55AE65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{055BE9A6-B772-42C0-BDC2-E129FE55AE65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{055BE9A6-B772-42C0-BDC2-E129FE55AE65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{055BE9A6-B772-42C0-BDC2-E129FE55AE65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3943857-284E-43CD-878C-A834AF398C47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3943857-284E-43CD-878C-A834AF398C47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3943857-284E-43CD-878C-A834AF398C47}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E3943857-284E-43CD-878C-A834AF398C47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3943857-284E-43CD-878C-A834AF398C47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3943857-284E-43CD-878C-A834AF398C47}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{2E7DB1BE-7436-434D-89BC-5510D75181D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E7DB1BE-7436-434D-89BC-5510D75181D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E7DB1BE-7436-434D-89BC-5510D75181D2}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{2E7DB1BE-7436-434D-89BC-5510D75181D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E7DB1BE-7436-434D-89BC-5510D75181D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E7DB1BE-7436-434D-89BC-5510D75181D2}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
