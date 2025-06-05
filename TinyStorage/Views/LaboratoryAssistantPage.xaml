@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:barcodeScanning="clr-namespace:BarcodeScanning;assembly=BarcodeScanning.Native.Maui"
+             xmlns:viewModels="clr-namespace:TinyStorage.ViewModels"
+             x:Class="TinyStorage.Views.LaboratoryAssistantPage"
+             x:DataType="viewModels:LaboratoryAssistantViewModel"
+             BackgroundColor="{StaticResource White}">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Выйти"
+                     Order="Primary"
+                     Priority="0"
+                     Command="{Binding LogoutCommand}" />
+    </ContentPage.ToolbarItems>
+
+    <Grid RowDefinitions="*,Auto"
+          ColumnDefinitions="*">
+        <Grid>
+            <barcodeScanning:CameraView x:Name="Barcode"
+                                        OnDetectionFinishedCommand="{Binding DetectionFinishedCommand}"
+                                        CaptureQuality="High"
+                                        ForceInverted="True"
+                                        AimMode="True"
+                                        CameraEnabled="True" />
+        </Grid>
+
+        <Grid Grid.Row="1"
+              Padding="16"
+              ColumnSpacing="16">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Column="0"
+                    Text="Вернуть"
+                    Command="{Binding ReturnItemCommand}"
+                    BackgroundColor="{StaticResource OffBlack}"
+                    TextColor="{StaticResource White}"
+                    CornerRadius="24"
+                    HeightRequest="56">
+                <Button.ImageSource>
+                    <FontImageSource Glyph="⤴️"
+                                     FontFamily="MaterialIcons"
+                                     Size="20"
+                                     Color="White" />
+                </Button.ImageSource>
+            </Button>
+
+            <Button Grid.Column="1"
+                    Text="Взять"
+                    Command="{Binding TakeItemCommand}"
+                    BackgroundColor="{StaticResource Primary}"
+                    TextColor="{StaticResource White}"
+                    CornerRadius="24"
+                    HeightRequest="56">
+                <Button.ImageSource>
+                    <FontImageSource Glyph="⤵️"
+                                     FontFamily="MaterialIcons"
+                                     Size="24"
+                                     Color="{StaticResource White}" />
+                </Button.ImageSource>
+            </Button>
+        </Grid>
+    </Grid>
+</ContentPage>
